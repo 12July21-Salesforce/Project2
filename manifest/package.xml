@@ -11,6 +11,36 @@
     </types>
     <types>
         <members>*</members>
+        <name>ApprovalProcess</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>SJP_Entertainment</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+     <types>
+        <members>*</members>
+        <name>Workflow</name>
+    </types>
+    <types>
+        <members>Executive</members>
+        <members>VP</members>
+        <members>Admin</members>
+        <name>Profile</name>
+   </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -18,7 +48,16 @@
         <name>ApexTrigger</name>
     </types>
     <types>
+        <members>*</members>
+        <name>ContentAsset</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
         <members>Public_Relation_Record_Page</members>
+        <members>Idol_Management_UtilityBar</members>
         <name>FlexiPage</name>
     </types>
     <types>
@@ -26,11 +65,16 @@
         <name>Layout</name>
     </types>
     <types>
-        <members>pickIdols</members>
-        <members>IdolCreatedMessage</members>
-        <members>CreatedIdolPage</members>
         <members>AppPageWiz</members>
+        <members>blackpinkpage</members>
+        <members>btspage</members>
+        <members>CreatedIdolPage</members>
+        <members>IdolCreatedMessage</members>
+        <members>IdolVisualForcePage</members>
         <members>LogPageWiz</members>
+        <members>LookupLocation</members>
+        <members>pickIdols</members>
+        <members>straykidspage</members>
         <name>ApexPage</name>
     </types>
     <version>52.0</version>

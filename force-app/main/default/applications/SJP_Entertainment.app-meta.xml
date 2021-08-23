@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>X1fd3dd62b20511eb93b703206dd91175_im</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Used for the general management of Idol Talent</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>SJP Entertainment</label>
+    <navType>Standard</navType>
+    <tabs>Idol_Group__c</tabs>
+    <tabs>Idol__c</tabs>
+    <tabs>Appointment__c</tabs>
+    <tabs>Public_Relations__c</tabs>
+    <tabs>Logistic__c</tabs>
+    <tabs>Location__c</tabs>
+    <tabs>Public_Relations_Records</tabs>
+    <tabs>Idol_Details</tabs>
+    <tabs>Appointment_Creation_Wizard</tabs>
+    <tabs>BTS_Page</tabs>
+    <tabs>Blackpinkpage</tabs>
+    <tabs>straykidspage</tabs>
+    <tabs>Location_Page</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Idol_Management_UtilityBar</utilityBar>
+</CustomApplication>

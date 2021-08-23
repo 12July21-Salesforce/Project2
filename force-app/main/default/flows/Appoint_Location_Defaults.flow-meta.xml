@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <decisions>
+        <name>Record_Type_Branch</name>
+        <label>Record Type Branch</label>
+        <locationX>266</locationX>
+        <locationY>354</locationY>
+        <defaultConnector>
+            <targetReference>Music_Video</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Music Video Shoot</defaultConnectorLabel>
+        <rules>
+            <name>Acting</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Acting Gig</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Movie_Gig</targetReference>
+            </connector>
+            <label>Acting</label>
+        </rules>
+        <rules>
+            <name>Concert</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Concert</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Concert_gig</targetReference>
+            </connector>
+            <label>Concert</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Appoint_Location_Defaults {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Appoint Location Defaults</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Concert_gig</name>
+        <label>Concert_gig</label>
+        <locationX>50</locationX>
+        <locationY>348</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SJP Concert Stadium</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Location__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Movie_Gig</name>
+        <label>Movie Gig</label>
+        <locationX>274</locationX>
+        <locationY>513</locationY>
+        <inputAssignments>
+            <field>Managing_Location__c</field>
+            <value>
+                <stringValue>SJP American Branch</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Music_Video</name>
+        <label>Music Video</label>
+        <locationX>465</locationX>
+        <locationY>348</locationY>
+        <inputAssignments>
+            <field>Managing_Location__c</field>
+            <value>
+                <stringValue>SJP Entertainment Offices</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>159</locationX>
+        <locationY>54</locationY>
+        <connector>
+            <targetReference>Record_Type_Branch</targetReference>
+        </connector>
+        <object>Appointment__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>
