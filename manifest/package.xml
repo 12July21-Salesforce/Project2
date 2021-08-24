@@ -25,8 +25,11 @@
         <members>*</members>
         <name>CustomTab</name>
     </types>
-     <types>
-        <members>*</members>
+    <types>
+        <members>Appointment__c</members>
+        <members>Idol__c</members>
+        <members>Location__c</members>
+        <members>Public_Relations__c</members>
         <name>Workflow</name>
     </types>
     <types>
@@ -34,7 +37,7 @@
         <members>VP</members>
         <members>Admin</members>
         <name>Profile</name>
-   </types>
+    </types>
     <types>
         <members>*</members>
         <name>PermissionSet</name>
