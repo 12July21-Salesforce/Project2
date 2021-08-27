@@ -9,11 +9,11 @@
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>usertwo@mymail.com</recipient>
+            <recipient>userone@mymail.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>userone@mymail.com</recipient>
+            <recipient>usertwo@mymail.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>

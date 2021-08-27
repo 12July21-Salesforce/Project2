@@ -1,11 +1,10 @@
 <apex:page standardController="Idol__c" extensions="IdolControllerExtension" tabStyle="Idol__c">
-    <apex:form>
+    <apex:form >
         <apex:pageBlock title="Idols" id="idol_list">
             <apex:commandButton action="{!Create}" value="Create Idol"/> 
             <apex:pageBlockTable value="{! idols }" var="idol">
-                <apex:column>
-                    <apex:commandLink
-                        action="{! URLFOR($Action.Idol__c.Edit, idol.Id) }" reRender="idol_list">
+                <apex:column >
+                    <apex:commandLink action="{! URLFOR($Action.Idol__c.Edit, idol.Id) }" reRender="idol_list">
                         Edit
                     </apex:commandLink>
                 </apex:column>
@@ -16,7 +15,7 @@
                         </apex:commandLink>
                     </apex:facet>
                 </apex:column>
-                <apex:column headerValue ="Phone Number" value="{!idol.Idol_Phone__c}"/>
+                <apex:column headerValue="Phone Number" value="{!idol.Idol_phone__c}"/>
                 <apex:column value="{!idol.Assigned_Location__c}">
                     <apex:facet name="header">
                         <apex:commandLink action="{! sortAssignedLocation }" reRender="idol_list">

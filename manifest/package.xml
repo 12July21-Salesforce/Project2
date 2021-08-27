@@ -82,3 +82,42 @@
     </types>
     <version>52.0</version>
 </Package>
+
+<!--types>
+        <members>Shelter League</members>
+        <name>Network</name>
+    </types>
+    <types>
+        <members>Shelter_League</members>
+        <name>CustomSite</name>
+    </types>
+    <types>
+        <members>Shelter_League1</members>
+        <name>SiteDotCom</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Document</name>
+    </types> 
+    <types>
+        <members>*</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ContentAsset</name>
+    </types>
+    <types>
+        <members>sampleCmp</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AutoResponseRules</name>
+    </types>
+    <types>
+        <members>Family_Pending_Info/Family_Pending_Info</members>
+        <members>Family_Pending_Info/Email_With_Donation</members>
+        <name>EmailTemplate</name>
+    </types>
+    -->
