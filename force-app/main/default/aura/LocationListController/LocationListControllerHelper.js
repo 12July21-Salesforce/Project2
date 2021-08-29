@@ -143,7 +143,55 @@
 
     //
 
+    handleFormSubmit: function(component) {
 
+       
+
+        var showValidationError = false;
+        var field1 = component.find("Name");
+        var field2 = component.find("Address");
+        var field3 = component.find("LocationType" );
+        var vaildationFailReason = '';
+        
+            if( $A.util.isEmpty(field1.get("v.value"))&& $A.util.isEmpty(field2.get("v.value"))
+            &&$A.util.isEmpty(field3.get("v.value"))
+            ){
+
+                 
+                    showValidationError = true;
+                    vaildationFailReason = "Fill in all the fields, they cannot be empty!";
+                
+
+            }
+            else{
+
+
+                if(  $A.util.isEmpty(field1.get("v.value"))){
+                    showValidationError = true;
+                    vaildationFailReason = "The field location name cannot be empty!";
+                } 
+                if(  $A.util.isEmpty(field2.get("v.value"))){
+                    showValidationError = true;
+                    vaildationFailReason = "The field address cannot be empty!";
+                } 
+                if( $A.util.isEmpty(field3.get("v.value"))){
+                    showValidationError = true;
+                    vaildationFailReason = "The field location type cannot be empty!";
+                } 
+            
+
+            }
+         
+            
+         
+            if (!showValidationError) {
+              
+                component.find("recordEditFormForNewLocation" ).submit();  
+            } else {
+                component.find('OppMessage').setError(vaildationFailReason);
+                 
+            }
+    },
      
 
 

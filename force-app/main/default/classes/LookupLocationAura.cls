@@ -13,27 +13,6 @@ public class LookupLocationAura {
          locationList= [SELECT ID,Name, Location_Type__c, Address__c FROM Location__c LIMIT :pageSize OFFSET :offset];
         return  locationList;
     }
-   @AuraEnabled
-    public  static List<Location__c> updateLocation(List<Location__c> loc ) {
-         
-        update loc ;
-        return loc ;
-             
-        // try {  
-          
-        //     update loc;
-        //     return true;  
-              
-        // } catch(Exception e) {  
-          
-        //     return false;  
-              
-        // }  
-    }
-
-    @AuraEnabled
-    public static void deleteLocation(Location__c delLoc){
-        delete delLoc;
-    } 
+    
 
 }

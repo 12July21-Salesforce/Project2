@@ -4,6 +4,7 @@
     <aura:attribute name="Columns" type="List" />
     <aura:attribute name="LocationObject" type="Object" />
     <aura:attribute name="Spinner" type="boolean" default="true"/>
+     
 
     <aura:attribute name="draftValues" type="Object" default="[]"/>
    
@@ -84,9 +85,10 @@
  
         <lightning:recordEditForm objectApiName="Location__c"
             onsuccess="{!c.handleReset}"
-                            
+            aura:id="recordEditFormForNewLocation"  
+            onsubmit="{!c.handleSubmit}"               
             >
-            <lightning:messages />
+            <lightning:messages aura:id="OppMessage" />
             <lightning:inputField fieldName="Name" aura:id="Name"/>
             <lightning:inputField fieldName="Address__c" aura:id="Address"/>
             <lightning:inputField fieldName="Location_Type__c" aura:id="LocationType" />

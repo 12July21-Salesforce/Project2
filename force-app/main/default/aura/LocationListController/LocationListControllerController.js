@@ -31,7 +31,10 @@
       handleReset: function(component, event, helper) {
         helper.helperReset(component, event, helper);
     }  ,
-     
+    handleSubmit: function(component, event, helper) {
+        event.preventDefault();
+        helper.handleFormSubmit(component);
+    },
     //
    handleOnSave: function(component, event, helper) {
 
