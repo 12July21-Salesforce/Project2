@@ -2,7 +2,7 @@
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <tasks>
         <fullName>New_Location</fullName>
-        <assignedTo>userthree@mymail.com</assignedTo>
+        <assignedTo>rdavidson@example.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>14</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>

@@ -1,0 +1,102 @@
+<aura:component  controller="LookupLocationAura" implements="flexipage:availableForRecordHome,force:hasRecordId,force:appHostable" access="global" >
+     
+    <aura:attribute type="Object" name="locationList"/>
+    <aura:attribute name="Columns" type="List" />
+    <aura:attribute name="LocationObject" type="Object" />
+    <aura:attribute name="Spinner" type="boolean" default="true"/>
+
+    <aura:attribute name="draftValues" type="Object" default="[]"/>
+   
+
+    <aura:attribute name="pageNumber" type="Integer" default="1"/>
+    <aura:attribute name="pageSize" type="Integer" default="3"/>
+    <aura:attribute name="isLastPage" type="Boolean" default="false"/>
+    <aura:attribute name="dataSize" type="Integer" default="0"/> 
+
+    <aura:attribute name="recordId" type="List"   />
+
+    <aura:registerEvent name="saveLocation" type="c:LocationComponentEvent" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.helperMethod}" />
+    <aura:handler event="force:refreshView" action="{!c.helperMethod}"  />
+    <aura:handler event="aura:doneWaiting" action="{!c.handleHideSpinner}"/>
+    
+
+     
+
+    <aura:handler event="c:LocationComponentEvent" action="{!c.detailnavigate}"/>
+   
+   
+    <lightning:card   title="Locations"> 
+            <lightning:datatable aura:id="dtTable"  
+            data="{!v.locationList }"
+            columns="{!v.Columns}"
+            keyField="id"
+            onrowaction="{!c.handleRowAction}"
+            onsave="{!c.handleOnSave}"
+            hideCheckboxColumn="true"
+            draftValues="{! v.draftValues }"
+            />
+
+        <div class="slds-clearfix">
+            <div class="slds-page-header" role="banner">
+                <div class="slds-float_right">            
+                    <lightning:button label="Prev" iconName="utility:chevronleft" iconPosition="left"
+                                    onclick="{!c.handlePrev}" disabled="{! v.pageNumber == 1}"/>
+                    <lightning:button label="Next" iconName="utility:chevronright" iconPosition="right"
+                                    disabled="{! v.isLastPage}" onclick="{!c.handleNext}"/>
+                </div>
+                <p class="slds-page-header__title">Page {!v.pageNumber} | Showing records from {! ((v.pageNumber-1)*v.pageSize)+' to '+((v.pageNumber-1)*v.pageSize+v.dataSize)}</p>
+            </div>
+        </div>
+    </lightning:card>      
+    
+    
+        <aura:if isTrue="{!v.Spinner}">
+            <div aura:id="spinnerId" class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+            </div>
+        </aura:if>
+
+
+        <div class="spacerContainer">
+
+        </div>
+        <div class="spacerContainer">
+
+        </div>
+        
+
+        
+
+ 
+     
+      
+    <lightning:card   title="Add a Location">
+        
+     
+ 
+   	   
+ 
+        <lightning:recordEditForm objectApiName="Location__c"
+            onsuccess="{!c.handleReset}"
+                            
+            >
+            <lightning:messages />
+            <lightning:inputField fieldName="Name" aura:id="Name"/>
+            <lightning:inputField fieldName="Address__c" aura:id="Address"/>
+            <lightning:inputField fieldName="Location_Type__c" aura:id="LocationType" />
+            
+            <div class="slds-align_absolute-center" style="height:5rem"> 
+            <lightning:button   onclick="{!c.handleReset}"   label="Cancel" />
+            <lightning:button disabled="{!v.disabled}" variant="brand" type="submit" name="save" label="Save" />
+            </div>
+        </lightning:recordEditForm>
+         
+    </lightning:card>
+
+</aura:component>

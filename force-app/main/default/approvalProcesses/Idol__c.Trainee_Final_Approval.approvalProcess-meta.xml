@@ -13,11 +13,11 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>userone@mymail.com</name>
+                <name>christian.avileslopez@creative-moose-c7m25s.com</name>
                 <type>user</type>
             </approver>
             <approver>
-                <name>alejandro.yanez@resourceful-koala-kdf64d.com</name>
+                <name>rdavidson@example.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -29,11 +29,11 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>alejandro.yanez@resourceful-koala-kdf64d.com</name>
+                <name>christian.avileslopez@creative-moose-c7m25s.com</name>
                 <type>user</type>
             </approver>
             <approver>
-                <name>usertwo@mymail.com</name>
+                <name>jjonas@example.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -71,11 +71,11 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>alejandro.yanez@resourceful-koala-kdf64d.com</name>
+                <name>christian.avileslopez@creative-moose-c7m25s.com</name>
                 <type>user</type>
             </approver>
             <approver>
-                <name>usertwo@mymail.com</name>
+                <name>jjonas@example.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -90,11 +90,11 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>alejandro.yanez@resourceful-koala-kdf64d.com</name>
+                <name>christian.avileslopez@creative-moose-c7m25s.com</name>
                 <type>user</type>
             </approver>
             <approver>
-                <name>userone@mymail.com</name>
+                <name>rdavidson@example.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>

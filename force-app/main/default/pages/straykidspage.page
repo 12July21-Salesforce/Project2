@@ -1,5 +1,5 @@
 <apex:page controller="strayController">
- <apex:form>
+ <apex:form >
     <apex:pageBlock title="Idols from Stray Kids" >
         <apex:pageBlockSection >
             <apex:outputLink value="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA" >Stray Kids Youtube Channel</apex:outputLink>
@@ -10,8 +10,8 @@
             <apex:column value="{!i.Name}"/>
           </apex:pageBlockTable>
          </apex:pageBlockSection>
-      </apex:pageBlock >
-       <apex:pageBlockSection>
+      </apex:pageBlock>
+       <apex:pageBlockSection >
             <apex:image url="{!URLFOR($Resource.groups, 'groups/straykids.jpg')}" width="400"></apex:image>
         </apex:pageBlockSection>
     </apex:pageBlock>

@@ -12,7 +12,10 @@ SJP Entertainment Locations
                 <apex:column headerValue="Location Name" value="{!l.Name}"/>
                 <apex:column headerValue="Location Type" value="{!l.Location_Type__c}"/>
                 <apex:column headerValue="Location Address">
-                    <apex:outputLink value="{!l.Address__c}">{!l.Address__c}</apex:outputLink>
+                    <apex:outputLink value="https://google.com/search">
+                     {!l.Address__c}
+                                      <apex:param name="q" value="{!l.Address__c}"></apex:param>
+                            </apex:outputLink>
                 </apex:column>
             </apex:pageBlockTable>
             <br/>

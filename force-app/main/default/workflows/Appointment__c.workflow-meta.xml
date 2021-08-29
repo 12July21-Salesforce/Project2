@@ -21,7 +21,7 @@
     </rules>
     <tasks>
         <fullName>Meet_the_newcomers</fullName>
-        <assignedTo>alejandro.yanez@resourceful-koala-kdf64d.com</assignedTo>
+        <assignedTo>christian.avileslopez@creative-moose-c7m25s.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>7</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>
@@ -33,7 +33,7 @@
     </tasks>
     <tasks>
         <fullName>New_Idols_to_Meet</fullName>
-        <assignedTo>userone@mymail.com</assignedTo>
+        <assignedTo>ltell@example.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>7</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>
