@@ -1,9 +1,6 @@
 public class LookupLocationAura {
     
-     
-    public List<Location__c> findLocations {get; set;}
-    
-    public Location__c location {get; set;}
+      
     
      
     @AuraEnabled
@@ -13,6 +10,20 @@ public class LookupLocationAura {
          locationList= [SELECT ID,Name, Location_Type__c, Address__c FROM Location__c LIMIT :pageSize OFFSET :offset];
         return  locationList;
     }
+    @AuraEnabled
+    public static void deleteLocation( Location__c loc){
+
+        delete loc;
+
+
+    }
     
+    @AuraEnabled
+    public static void updateLocation( Location__c locUpdt){
+
+        update locUpdt;
+
+
+    }
 
 }

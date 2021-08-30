@@ -85,24 +85,16 @@
 
 
     editRecord : function(component, event,row) {
-        
-        var navService = component.find("navService");
-    
-        var pageReference = {
-            type: 'standard__recordPage',
-            attributes: {
-                "recordId": row.Id,
-                "objectApiName": cmp.get("v.objectName"),
-                "actionName": "edit"
-            }
-        }
-        navService.navigate(pageReference);
 
-        // var saveEvent = $A.get("e.c:LocationComponentEvent");
-        // var locEdit = component.get("v.locToedit");
-        // saveEvent.setParams({ "locSave": locEdit});
-         
-        // saveEvent.fire();
+        var row = event.getParam('row');
+        var recordId = row.Id;
+        var editRecordEvent = $A.get("e.force:editRecord");
+        editRecordEvent.setParams({
+            "recordId": recordId
+        });
+        editRecordEvent.fire();
+        
+      
     }, 
     viewRecord : function(component, event) {
         var row = event.getParam('row');
@@ -120,22 +112,11 @@
          
         var action = component.get("c.deleteLocation");
         action.setParams({
-            "acc": row
+            "loc": row
         });
         action.setCallback(this, function(response) {
             var state = response.getState();
-            if (state === "SUCCESS" ) {
-                var rows = component.get('v.recordId');
-                var rowIndex = rows.indexOf(row);
-                rows.splice(rowIndex, 1);
-                component.set('v.recordId', rows);
-                var toastEvent = $A.get("e.force:showToast");
-                toastEvent.setParams({
-                    "title": "Success!",
-                    "message": "The record has been delete successfully."
-                });
-                toastEvent.fire();
-            }
+            
         });
         $A.enqueueAction(action);
     },
