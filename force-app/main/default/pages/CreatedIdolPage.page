@@ -1,14 +1,14 @@
 <apex:page standardController="Idol__c" extensions="IdolControllerExtension">
-    <apex:form>
+    <apex:form >
         <apex:pageBlock title="Create Idol">
             <apex:pageBlockSection columns="1">
-                <apex:inputField value = "{!Idol__c.Name}"/>
-                <apex:inputField value ="{!Idol__c.Sex__c}"/>
-                <apex:inputField value = "{!Idol__c.Idol_Phone__c}"/>
-                <apex:inputField value = "{!Idol__c.Date_recruited__c}"/>
-                <apex:inputField value = "{!Idol__c.Idol_Pay__c}"/>
+                <apex:inputField value="{!Idol__c.Name}"/>
+                <apex:inputField value="{!Idol__c.Sex__c}"/>
+                <apex:inputField value="{!Idol__c.Idol_phone__c}"/>
+                <apex:inputField value="{!Idol__c.Date_recruited__c}"/>
+                <apex:inputField value="{!Idol__c.Idol_Pay__c}"/>
             </apex:pageBlockSection>
-            <apex:pageBlockButtons>
+            <apex:pageBlockButtons >
                 <apex:commandButton action="{! SaveMessage }" value="Save" />
             </apex:pageBlockButtons>
         </apex:pageBlock>

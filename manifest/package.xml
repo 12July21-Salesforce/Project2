@@ -43,7 +43,17 @@
         <name>PermissionSet</name>
     </types>
     <types>
-        <members>*</members>
+        <members>PublicRelations</members>
+        <members>prTable</members>
+        <members>idolList</members>
+        <members>prRecordForm</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>prTableController</members>
+        <members>prTableControllerTest</members>
+        <members>idolListController</members>
+        <members>idolListControllerTest</members>
         <name>ApexClass</name>
     </types>
     <types>

@@ -180,7 +180,7 @@
             <name>National_ID</name>
             <dataType>String</dataType>
             <defaultValue>
-                <stringValue/>
+                <stringValue></stringValue>
             </defaultValue>
             <fieldText>National ID #</fieldText>
             <fieldType>InputField</fieldType>
@@ -234,7 +234,7 @@
         <isInput>true</isInput>
         <isOutput>false</isOutput>
         <value>
-            <stringValue/>
+            <stringValue></stringValue>
         </value>
     </variables>
     <variables>

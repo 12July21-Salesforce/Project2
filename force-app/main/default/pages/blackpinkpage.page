@@ -1,5 +1,5 @@
 <apex:page controller="blackpinkController">
- <apex:form>
+ <apex:form >
     <apex:pageBlock title="Idols from Black Pink" >
         <apex:pageBlockSection >
             <apex:outputLink value="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A">Black Pink Youtube Channel</apex:outputLink>
@@ -10,8 +10,8 @@
                 <apex:column value="{!i.Name}"/>
               </apex:pageBlockTable>
              </apex:pageBlockSection>
-          </apex:pageBlock >
-        <apex:pageBlockSection>
+          </apex:pageBlock>
+        <apex:pageBlockSection >
             <apex:image url="{!URLFOR($Resource.groups, 'groups/blackpink.jpg')}" width="400"></apex:image>
         </apex:pageBlockSection>
     </apex:pageBlock>
