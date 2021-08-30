@@ -44,7 +44,25 @@
         <name>PermissionSet</name>
     </types>
     <types>
-        <members>*</members>
+        <members>blackpinkController</members>
+        <members>blackpinkControllerTest</members>
+        <members>blackpinkMockData</members>
+        <members>btsController</members>
+        <members>btsControllerTest</members>
+        <members>btsMockData</members>
+        <members>IdolControllerExtension</members>
+        <members>IdolControllerExtensionTest</members>
+        <members>LookupLocation_CC_Test</members>
+        <members>LookupLocation_CC</members>
+        <members>newAppointmentExtension</members>
+        <members>pickIdols_CC</members>
+        <members>pickIdolsTest</members>
+        <members>pITestDataFactory</members>
+        <members>strayController</members>
+        <members>strayControllerTest</members>
+        <members>strayMockData</members>
+        <members>bandId_Test</members>
+        <members>bandId</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -65,7 +83,23 @@
         <name>FlexiPage</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Appointment__c-Appointment Layout</members>
+        <members>Appointment__c-Concert Layout</members>
+        <members>Appointment__c-Idol Orientation Layout</members>
+        <members>Appointment__c-Logistic Layout</members>
+        <members>Appointment__c-Movie Layout</members>
+        <members>Appointment__c-Music Video Layout</members>
+        <members>Idol__c-Idol Group Layout</members>
+        <members>Idol__c-Idol Layout</members>
+        <members>Idol__c-Trainee Layout</members>
+        <members>Idol_Group__c-Idol Group Layout</members>
+        <members>Idol_Group__c-Idol Management Layout</members>
+        <members>Location__c-Location Layout</members>
+        <members>Location__c-Office Layout</members>
+        <members>Logistic__c-Logistic Layout</members>
+        <members>Public_Relations__c-PR Opportunity</members>
+        <members>Public_Relations__c-Public Relation Layout</members>
+        <members>Public_Relations__c-Scandal Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -86,7 +120,7 @@
         <name>Network</name>
     </types>
     <types>
-        <members>*</members>
+        <members>K_Pop</members>
         <name>CustomSite</name>
     </types>
     <types>
@@ -106,11 +140,17 @@
         <name>ContentAsset</name>
     </types>
     <types>
-        <members>*</members>
+        <members>carousel</members>
+        <members>layout</members>
+        <members>members</members>
+        <members>popularSongs</members>
+        <members>quotes</members>
+        <members>socialmedia</members>
+        <members>tabSet</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Case</members>
         <name>AutoResponseRules</name>
     </types>
     <types>

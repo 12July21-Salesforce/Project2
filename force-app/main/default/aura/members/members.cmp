@@ -18,5 +18,10 @@
                 </div>
             </div>
         </lightning:recordViewForm>
+        <!--lightning:recordForm
+        recordId="{!v.Id}"
+        objectApiName="Idol_Group__c"
+        layoutType="compact "
+        mode="readonly" /-->
     </lightning:card>
 </aura:component>
