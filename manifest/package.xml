@@ -36,6 +36,7 @@
         <members>Executive</members>
         <members>VP</members>
         <members>Admin</members>
+        <members>Custom Community</members>
         <name>Profile</name>
     </types>
     <types>
@@ -80,19 +81,16 @@
         <members>straykidspage</members>
         <name>ApexPage</name>
     </types>
-    <version>52.0</version>
-</Package>
-
-<!--types>
-        <members>Shelter League</members>
+    <types>
+        <members>K-Pop</members>
         <name>Network</name>
     </types>
     <types>
-        <members>Shelter_League</members>
+        <members>*</members>
         <name>CustomSite</name>
     </types>
     <types>
-        <members>Shelter_League1</members>
+        <members>*</members>
         <name>SiteDotCom</name>
     </types>
     <types>
@@ -108,7 +106,7 @@
         <name>ContentAsset</name>
     </types>
     <types>
-        <members>sampleCmp</members>
+        <members>*</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
@@ -116,8 +114,10 @@
         <name>AutoResponseRules</name>
     </types>
     <types>
-        <members>Family_Pending_Info/Family_Pending_Info</members>
-        <members>Family_Pending_Info/Email_With_Donation</members>
+        <members>ResponseEmail/ResponceTemplate</members>
         <name>EmailTemplate</name>
     </types>
-    -->
+    <version>52.0</version>
+</Package>
+
+

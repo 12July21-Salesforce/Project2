@@ -1,0 +1,19 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="bandName" type="String"></aura:attribute>
+    <aura:attribute name="img1" type="String[]"></aura:attribute>
+    <aura:attribute name="img2" type="String"></aura:attribute>
+    <aura:attribute name="img3" type="String"></aura:attribute>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+    
+    <div class="slds-size_small">
+        <lightning:carousel disableAutoRefresh="false" disableAutoScroll="false" scrollDuration="3">
+            <lightning:carouselImage src = "{!$Resource.bands + '/bands/' + v.img1}" width="30" height="30">
+            </lightning:carouselImage>
+            <lightning:carouselImage src = "{!$Resource.bands + '/bands/' + v.img2}" width="30" height="30">
+            </lightning:carouselImage>
+            <lightning:carouselImage src = "{!$Resource.bands + '/bands/' + v.img3}" width="30" height="30">
+            </lightning:carouselImage>
+        </lightning:carousel>
+    </div>
+</aura:component>

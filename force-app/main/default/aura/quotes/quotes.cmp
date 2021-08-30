@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+	<aura:attribute name="bandName" type="String"></aura:attribute>
+    <aura:attribute name="quote" type="String"></aura:attribute>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+    
+    <ui:outputText value="{!v.quote}"/>
+</aura:component>

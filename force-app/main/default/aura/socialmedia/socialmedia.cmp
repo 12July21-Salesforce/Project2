@@ -1,0 +1,20 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="bandName" type="String"></aura:attribute>
+    <aura:attribute name="youtube" type="String"></aura:attribute>
+    <aura:attribute name="instagram" type="String"></aura:attribute>
+    <aura:attribute name="spotify" type="String"></aura:attribute>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+    
+    <lightning:card class="slds-p-around_small">
+        <a href="{!v.youtube}">
+            <img src="{!$Resource.socialmedia + '/socialmedia/youtube.png'}" width="30" height="30"/>
+        </a>
+        <a href="{!v.instagram}">
+            <img src="{!$Resource.socialmedia + '/socialmedia/instagram.png'}" width="30" height="30"/>
+        </a>
+        <a href="{!v.spotify}">
+            <img src="{!$Resource.socialmedia + '/socialmedia/spotify.png'}" width="30" height="30"/>
+        </a>
+    </lightning:card>
+</aura:component>

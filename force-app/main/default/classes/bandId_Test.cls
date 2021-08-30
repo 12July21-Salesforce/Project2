@@ -3,120 +3,54 @@ private class bandId_Test {
     @TestSetup
     private static void testSetupObjectDataFactory(){
         List<Idol_Group__c> testDataGroup = new List<Idol_Group__c>();
-        List<String> bands = new List<String>{'BTS', 'Blackpink', 'Stray Kids'};
+        List<String> bands = new List<String>();
+        for(Integer i=0;i<100;i++) {
+            bands.add('Band' + i);
+        }
+
         Idol__c testidol = new Idol__c(Name='TestName', Idol_phone__c='7894651230');
         insert testidol;
-        
-        
 
         for(String b : bands) {
-        	Idol_Group__c nb = new Idol_Group__c(Name=b, Lead__c='testidol.id', Vocals__c='testidol.id');
+        	Idol_Group__c nb = new Idol_Group__c(Name=b, Lead__c=testidol.id, Vocals__c=testidol.id);
         	testDataGroup.add(nb);	        
         }                
         insert testDataGroup;
     }
     
     @isTest
-    private static void btsBTS() {
-        String testId = bandId.retrieveBandId('BTS');
-        System.assertEquals(testId, [SELECT Id FROM Idol_Group__c WHERE Name = 'BTS'].Id);
-
-        
-        
-        
-        
-    }
-        /*Test.startTest();
-        insert testCase;
-        Test.stopTest();
-        Integer existingCase = 0;
-        List<Case> newCases = [SELECT ContactId FROM Case];
-        for (Case c : newCases) {       
-            if(contactList.contains(c.ContactId)) {
-                ++existingCase;
-            }
-        }
-        System.assertEquals(1, existingCase);
+    private static void testSingle() {
+        String testId = bandId.retrieveBandId('Band0');
+        System.assertEquals(testId, [SELECT Id FROM Idol_Group__c WHERE Name = 'Band0'].Id);
+        testId = bandId.retrieveBandId('Band1');
+        System.assertNotEquals(testId, [SELECT Id FROM Idol_Group__c WHERE Name = 'Band0'].Id);        
     }
     
     @isTest
-    private static void singleCaseNewEmail() {
-        List<String> contactList = new List<String>();
-        for (List<Contact> con : [SELECT Id FROM Contact]) {
-            for (Contact c : con) {
-                contactList.add(c.Id);
-            }
-        }
-        
-        Case testCase = new Case(Status='New', Origin='Email', SuppliedEmail='test@mail.com');
+    private static void testBulk() {
+        Integer countPos = 0;
+        Integer countNeg = 0;
+        String testId;
+        String band;
+        List<Idol_Group__c> listId = [SELECT Id FROM Idol_Group__c];
         Test.startTest();
-        insert testCase;
-        Test.stopTest();
-        Integer existingCase = 0;
-        List<Case> newCases = [SELECT ContactId FROM Case];
-        for (Case c : newCases) {       
-            if(contactList.contains(c.ContactId)) {
-                ++existingCase;
+        for (Integer i=0;i<100;i++) {
+            if (i < 50) {
+                band = 'Band' + i;
+                testId = bandId.retrieveBandId(band);
+                if(testId == listId[i].Id) {
+                    ++countPos;
+                }       
+            } else {
+                band = 'Band' + (i-1);
+                testId = bandId.retrieveBandId(band);
+                if(testId != listId[i].Id) {
+                    ++countNeg;
+                }     
             }
         }
-        System.assertEquals(0, existingCase);
+        Test.stopTest();
+        System.assertNotEquals(200, countPos);        
+        System.assertNotEquals(200, countNeg);        
     }
-    
-    @isTest
-    private static void bulkCaseOldEmail() {
-        List<String> contactList = new List<String>();
-        for (List<Contact> con : [SELECT Id FROM Contact]) {
-            for (Contact c : con) {
-                contactList.add(c.Id);
-            }
-        }
-        
-        List<Case> testCase = new List<Case>();
-        
-        for(Integer i=0;i<50;i++) {
-            Case a = new Case(Status='New', Origin='Email', SuppliedEmail=i + 'test@mail.com');
-            testCase.add(a);
-        }
-        
-        Test.startTest();
-        insert testCase;
-        Test.stopTest();
-        Integer existingCase = 0;
-        List<Case> newCases = [SELECT ContactId FROM Case];
-        for (Case c : newCases) {       
-            if(contactList.contains(c.ContactId)) {
-                ++existingCase;
-            }
-        }
-        System.assertEquals(50, existingCase);
-    }
-    
-    @isTest
-    private static void bulkCaseNewEmail() {
-        List<String> contactList = new List<String>();
-        for (List<Contact> con : [SELECT Id FROM Contact]) {
-            for (Contact c : con) {
-                contactList.add(c.Id);
-            }
-        }
-        
-        List<Case> testCase = new List<Case>();
-        
-        for(Integer i=0;i<50;i++) {
-            Case a = new Case(Status='New', Origin='Email', SuppliedEmail=i + 'test1@mail.com');
-            testCase.add(a);
-        }
-        Test.startTest();
-        insert testCase;
-        Test.stopTest();
-        Integer existingCase = 0;
-        List<Case> newCases = [SELECT ContactId FROM Case];
-        for (Case c : newCases) {       
-            if(contactList.contains(c.ContactId)) {
-                ++existingCase;
-            }
-        }
-        System.assertEquals(0, existingCase);
-    }*/
-    
 }
