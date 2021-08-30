@@ -13,11 +13,11 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>userthree@mymail.com</name>
+                <name>	userthree@testemail.com</name>
                 <type>user</type>
             </approver>
             <approver>
-                <name>alejandro.yanez@resourceful-koala-kdf64d.com</name>
+                <name>jabulaninyawera@wise-shark-lxzojv.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -29,11 +29,11 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>alejandro.yanez@resourceful-koala-kdf64d.com</name>
+                <name>jabulaninyawera@wise-shark-lxzojv.com</name>
                 <type>user</type>
             </approver>
             <approver>
-                <name>userone@mymail.com</name>
+                <name>	timdrake@batmanemail.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>

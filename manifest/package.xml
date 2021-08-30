@@ -10,11 +10,11 @@
         <name>CustomObject</name>
     </types>
     <types>
-        <members>*</members>
+      
         <name>ApprovalProcess</name>
     </types>
     <types>
-        <members>*</members>
+      
         <name>Flow</name>
     </types>
     <types>
@@ -22,7 +22,7 @@
         <name>CustomApplication</name>
     </types>
     <types>
-        <members>*</members>
+      
         <name>CustomTab</name>
     </types>
     <types>
@@ -33,29 +33,36 @@
         <name>Workflow</name>
     </types>
     <types>
+        <members>IdolPage</members>
+        <members>CreateIdol</members>
+        <members>Idol</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
         <members>Executive</members>
         <members>VP</members>
         <members>Admin</members>
         <name>Profile</name>
     </types>
     <types>
-        <members>*</members>
+        
         <name>PermissionSet</name>
     </types>
     <types>
-        <members>*</members>
+        <members>MyIdolController</members>
+        <members>MyIdolControllerTest</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
+       
         <name>ApexTrigger</name>
     </types>
     <types>
-        <members>*</members>
+       
         <name>ContentAsset</name>
     </types>
     <types>
-        <members>*</members>
+      
         <name>StaticResource</name>
     </types>
     <types>
@@ -64,7 +71,7 @@
         <name>FlexiPage</name>
     </types>
     <types>
-        <members>*</members>
+       
         <name>Layout</name>
     </types>
     <types>

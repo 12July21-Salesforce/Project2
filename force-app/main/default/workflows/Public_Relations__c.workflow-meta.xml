@@ -5,15 +5,15 @@
         <description>PR Event</description>
         <protected>false</protected>
         <recipients>
-            <recipient>alejandro.yanez@resourceful-koala-kdf64d.com</recipient>
+            <recipient>jabulaninyawera@wise-shark-lxzojv.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>usertwo@mymail.com</recipient>
+            <recipient>timdrake@batmanemail.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>userone@mymail.com</recipient>
+            <recipient>usertwo@emailtest.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -24,7 +24,7 @@
         <description>PR Event email</description>
         <protected>false</protected>
         <recipients>
-            <recipient>alejandro.yanez@resourceful-koala-kdf64d.com</recipient>
+            <recipient>jabulaninyawera@wise-shark-lxzojv.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
