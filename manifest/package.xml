@@ -43,7 +43,8 @@
         <name>PermissionSet</name>
     </types>
     <types>
-        <members>*</members>
+        <members>LookupLocationAura</members>
+         <members>LookupLocationAura__Test</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -82,7 +83,7 @@
     </types>
     <types>
          
-        <members>*</members>
+        <members>LocationListController</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <version>52.0</version>
