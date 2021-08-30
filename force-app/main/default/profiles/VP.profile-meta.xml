@@ -5,6 +5,7 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
+<<<<<<< HEAD
     <classAccesses>
         <apexClass>ChangePasswordController</apexClass>
         <enabled>false</enabled>
@@ -185,21 +186,23 @@
         <apexClass>pickIdolsTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+=======
+>>>>>>> Markus
     <classAccesses>
-        <apexClass>pickIdols_CC</apexClass>
-        <enabled>true</enabled>
+        <apexClass>idolListController</apexClass>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>strayController</apexClass>
-        <enabled>true</enabled>
+        <apexClass>idolListControllerTest</apexClass>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>strayControllerTest</apexClass>
-        <enabled>true</enabled>
+        <apexClass>prTableController</apexClass>
+        <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>strayMockData</apexClass>
-        <enabled>true</enabled>
+        <apexClass>prTableControllerTest</apexClass>
+        <enabled>false</enabled>
     </classAccesses>
     <custom>true</custom>
     <fieldPermissions>
@@ -424,11 +427,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Public_Relations__c.Idol__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Public_Relations__c.Managing_Location__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -448,17 +446,20 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Public_Relations__c.Short_Description_of_Contact__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>AccountBrand-Account Brand Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>AlternativePaymentMethod-Alternative Payment Method Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -511,9 +512,12 @@
         <layout>AuthorizationFormText-Authorization Form Text Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Breed__c-Breed Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>Campaign-Campaign Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -583,9 +587,12 @@
         <layout>DataUsePurpose-Data Use Purpose Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>DelegatedAccount-External Managed Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>DigitalWallet-Digital Wallet Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -604,9 +611,12 @@
         <layout>Event-Event Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Family__c-Family Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>FeedItem-Feed Item Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -645,9 +655,12 @@
         <layout>Individual-Individual Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Inventory__c-Inventory Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>Invoice-Invoice Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -711,12 +724,15 @@
         <layout>PaymentLineInvoice-Payment Line Invoice Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Pet_Adopted__c-Pet Adopted Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pet__c-Pet Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>Pricebook2-Price Book Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -770,9 +786,12 @@
         <layout>SessionHijackingEventStore-Session Hijacking Event Store Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Shelter__c-Shelter Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>SocialPersona-Social Persona Layout</layout>
     </layoutAssignments>
     <layoutAssignments>

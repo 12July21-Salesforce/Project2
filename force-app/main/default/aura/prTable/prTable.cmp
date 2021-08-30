@@ -1,0 +1,12 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="prTableController" access="global">
+	<aura:attribute name="data" type="Object"></aura:attribute>
+    <aura:attribute name="columns" type="List"></aura:attribute>
+    <aura:attribute name="chosenObject" type="String"></aura:attribute>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+    <aura:handler name="change" value="{!v.chosenObject}" action="{!c.retrieveRecords}"></aura:handler>
+    
+    <div style="Height:150px">
+		<lightning:datatable keyField="id" data="{!v.data}" columns="{!v.columns}" onrowselection="{!c.fireRecordSelected}" maxRowSelection="1"></lightning:datatable>
+    </div>
+</aura:component>

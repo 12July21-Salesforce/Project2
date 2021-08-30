@@ -13,11 +13,19 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
+<<<<<<< HEAD
                 <name>christian.avileslopez@creative-moose-c7m25s.com</name>
                 <type>user</type>
             </approver>
             <approver>
                 <name>ltell@example.com</name>
+=======
+                <name>ap@mail.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>markus.metli@playful-badger-ggemho.com</name>
+>>>>>>> Markus
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -29,11 +37,19 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
+<<<<<<< HEAD
                 <name>christian.avileslopez@creative-moose-c7m25s.com</name>
                 <type>user</type>
             </approver>
             <approver>
                 <name>rdavidson@example.com</name>
+=======
+                <name>lb@mail.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>markus.metli@playful-badger-ggemho.com</name>
+>>>>>>> Markus
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>

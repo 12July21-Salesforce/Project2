@@ -5,6 +5,7 @@
         <description>PR Event</description>
         <protected>false</protected>
         <recipients>
+<<<<<<< HEAD
             <recipient>christian.avileslopez@creative-moose-c7m25s.com</recipient>
             <type>user</type>
         </recipients>
@@ -14,6 +15,17 @@
         </recipients>
         <recipients>
             <recipient>ltell@example.com</recipient>
+=======
+            <recipient>jal@mail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lb@mail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>markus.metli@playful-badger-ggemho.com</recipient>
+>>>>>>> Markus
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -24,7 +36,11 @@
         <description>PR Event email</description>
         <protected>false</protected>
         <recipients>
+<<<<<<< HEAD
             <recipient>christian.avileslopez@creative-moose-c7m25s.com</recipient>
+=======
+            <recipient>markus.metli@playful-badger-ggemho.com</recipient>
+>>>>>>> Markus
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>

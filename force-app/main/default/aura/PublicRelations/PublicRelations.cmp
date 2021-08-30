@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global">
+    
+    <aura:attribute name="chosenObject" type="String"></aura:attribute>
+    
+    
+    <aura:handler name="objectSelected" event="c:idolSelected" action="{!c.updateSelectedObject}"></aura:handler>
+    
+    <lightning:card class="sdls-p-around__small">
+    	<c:idolList chosenObject="{!v.chosenObject}"></c:idolList>
+        <c:prTable chosenObject="{!v.chosenObject}"></c:prTable>
+    </lightning:card>  
+</aura:component>

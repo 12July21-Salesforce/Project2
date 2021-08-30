@@ -3,6 +3,7 @@
     <applicationVisibilities>
         <application>SJP_Entertainment</application>
         <default>false</default>
+<<<<<<< HEAD
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
@@ -187,18 +188,24 @@
     </classAccesses>
     <classAccesses>
         <apexClass>pickIdols_CC</apexClass>
+=======
+        <visible>true</visible>
+    </applicationVisibilities>
+    <classAccesses>
+        <apexClass>idolListController</apexClass>
+>>>>>>> Markus
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>strayController</apexClass>
+        <apexClass>idolListControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>strayControllerTest</apexClass>
+        <apexClass>prTableController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>strayMockData</apexClass>
+        <apexClass>prTableControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <custom>false</custom>
@@ -260,27 +267,27 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Idol_Group__c.Debut_Status__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Idol_Group__c.Multi_Role2__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Idol_Group__c.Multi_Role__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Idol_Group__c.Notes_on_Group__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Idol_Group__c.Rapper__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -395,70 +402,68 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Public_Relations__c.Contact_Name__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Public_Relations__c.Course_Of_Action_To_Be_Taken__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Public_Relations__c.Date__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Public_Relations__c.Details__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Public_Relations__c.Email__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Public_Relations__c.Idol_Group__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Public_Relations__c.Idol__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Public_Relations__c.Managing_Location__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Public_Relations__c.Nature_of_the_Event__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Public_Relations__c.Other_Parties_Involved__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Public_Relations__c.Phone_Number__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Public_Relations__c.Short_Description_of_Contact__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>AccountBrand-Account Brand Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>AlternativePaymentMethod-Alternative Payment Method Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -511,9 +516,12 @@
         <layout>AuthorizationFormText-Authorization Form Text Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Breed__c-Breed Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>Campaign-Campaign Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -583,9 +591,12 @@
         <layout>DataUsePurpose-Data Use Purpose Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>DelegatedAccount-External Managed Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>DigitalWallet-Digital Wallet Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -604,9 +615,12 @@
         <layout>Event-Event Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Family__c-Family Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>FeedItem-Feed Item Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -645,9 +659,12 @@
         <layout>Individual-Individual Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Inventory__c-Inventory Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>Invoice-Invoice Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -711,12 +728,15 @@
         <layout>PaymentLineInvoice-Payment Line Invoice Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Pet_Adopted__c-Pet Adopted Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pet__c-Pet Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>Pricebook2-Price Book Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -735,11 +755,19 @@
         <layout>Public_Relations__c-PR Opportunity</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Public_Relations__c-PR Opportunity</layout>
         <recordType>Public_Relations__c.Publicity</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Public_Relations__c-PR Opportunity</layout>
+=======
+        <layout>Public_Relations__c-Public Relation Layout</layout>
+        <recordType>Public_Relations__c.Publicity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Public_Relations__c-Scandal Layout</layout>
+>>>>>>> Markus
         <recordType>Public_Relations__c.Scandal</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -770,9 +798,12 @@
         <layout>SessionHijackingEventStore-Session Hijacking Event Store Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+<<<<<<< HEAD
         <layout>Shelter__c-Shelter Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+=======
+>>>>>>> Markus
         <layout>SocialPersona-Social Persona Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -972,14 +1003,15 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>Public_Relations__c.Publicity</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Public_Relations__c.Scandal</recordType>
-        <visible>false</visible>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>Appointment_Creation_Wizard</tab>

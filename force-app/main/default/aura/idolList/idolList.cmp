@@ -1,0 +1,15 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="idolListController" access="global">
+	<aura:attribute name="chosenObject" type="String"></aura:attribute>
+	<aura:attribute name="objectOptions" type="String[]"></aura:attribute>	
+    
+    <aura:registerEvent name="objectSelected" type="c:idolSelected" ></aura:registerEvent>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.retrieveRecords}"></aura:handler>
+    <aura:handler name="change" value="{!v.chosenObject}" action="{!c.fireObjectSelected}"></aura:handler>
+    
+    <lightning:select label="Choose Idol" value="{!v.chosenObject}">
+    	<aura:iteration items="{!v.objectOptions}" var="objectName">
+            <option text="{!objectName}"></option>
+        </aura:iteration>
+    </lightning:select>
+</aura:component>

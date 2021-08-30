@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global">
+   
+    <aura:attribute name="recordId" type="String"></aura:attribute>
+    <aura:attribute name="displayForm" type="Boolean" default="false"></aura:attribute>
+    
+	<aura:handler event="c:prRecordSelected" action="{!c.updateAttributes}"></aura:handler>
+    
+    <aura:if isTrue="{!v.displayForm}">
+        <lightning:card class="slds-p-around_small">
+            <lightning:recordForm objectApiName="Public_Relations__c" recordId="{!v.recordId}"
+                                  layoutType="Compact">
+            </lightning:recordForm>
+        </lightning:card>
+    </aura:if>
+</aura:component>
