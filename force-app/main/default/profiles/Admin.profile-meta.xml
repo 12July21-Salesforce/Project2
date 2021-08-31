@@ -14,34 +14,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>LightningForgotPasswordController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>LightningForgotPasswordControllerTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>LightningLoginFormController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>LightningLoginFormControllerTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>LightningSelfRegisterController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>LightningSelfRegisterControllerTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>LookupLocationAura</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>LookupLocation_CC</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -95,22 +67,18 @@
     </classAccesses>
     <classAccesses>
         <apexClass>pickIdols_CC</apexClass>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <classAccesses>
-        <apexClass>idolListController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>idolListControllerTest</apexClass>
+        <apexClass>strayController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>prTableController</apexClass>
+        <apexClass>strayControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>prTableControllerTest</apexClass>
+        <apexClass>strayMockData</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <custom>false</custom>
@@ -412,13 +380,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Public_Relations__c-PR Opportunity</layout>
-        <layout>Public_Relations__c-Public Relation Layout</layout>
-        <recordType>Public_Relations__c.Publicity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Public_Relations__c-Scandal Layout</layout>
-        <recordType>Public_Relations__c.Scandal</recordType>
-    </layoutAssignments>
         <recordType>Public_Relations__c.Scandal</recordType>
     </layoutAssignments>
     <objectPermissions>
@@ -572,14 +533,6 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Breed__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Family__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Idol_Details</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -608,23 +561,11 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Pet_Adopted__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Pet__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Public_Relations_Records</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>Public_Relations__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>Shelter__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
