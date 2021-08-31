@@ -14,34 +14,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>LightningForgotPasswordController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>LightningForgotPasswordControllerTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>LightningLoginFormController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>LightningLoginFormControllerTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>LightningSelfRegisterController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>LightningSelfRegisterControllerTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>LookupLocationAura</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>LookupLocation_CC</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -94,20 +66,20 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>idolListController</apexClass>
-        <enabled>false</enabled>
+        <apexClass>pickIdols_CC</apexClass>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>idolListControllerTest</apexClass>
-        <enabled>false</enabled>
+        <apexClass>strayController</apexClass>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>prTableController</apexClass>
-        <enabled>false</enabled>
+        <apexClass>strayControllerTest</apexClass>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>prTableControllerTest</apexClass>
-        <enabled>false</enabled>
+        <apexClass>strayMockData</apexClass>
+        <enabled>true</enabled>
     </classAccesses>
     <custom>true</custom>
     <fieldPermissions>
@@ -332,6 +304,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Public_Relations__c.Idol__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Public_Relations__c.Managing_Location__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -351,9 +328,9 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Public_Relations__c.Short_Description_of_Contact__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <layoutAssignments>
         <layout>Appointment__c-Appointment Layout</layout>
@@ -374,7 +351,10 @@
         <layout>Appointment__c-Appointment Layout</layout>
         <recordType>Appointment__c.Music_Video_Shoot</recordType>
     </layoutAssignments>
-        <layoutAssignments>
+    <layoutAssignments>
+        <layout>Idol_Group__c-Idol Management Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Idol__c-Idol Group Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
