@@ -124,57 +124,8 @@
         <name>ApexPage</name>
     </types>
     <types>
-        <members>K-Pop</members>
-        <name>Network</name>
-    </types>
-    <types>
-        <members>K_Pop</members>
-        <name>CustomSite</name>
-    </types>
-    <types>
         <members>*</members>
-        <name>SiteDotCom</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Document</name>
-    </types> 
-    <types>
-        <members>*</members>
-        <name>LightningComponentBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ContentAsset</name>
-    </types>
-    <types>
-        <members>carousel</members>
-        <members>layout</members>
-        <members>members</members>
-        <members>popularSongs</members>
-        <members>quotes</members>
-        <members>socialmedia</members>
-        <members>tabSet</members>
-        <members>PublicRelations</members>
-        <members>prTable</members>
-        <members>idolList</members>
-        <members>prRecordForm</members>
-        <members>LocationListController</members>
-        <members>LocationApp</members>
-        <members>Idol</members>
-        <members>IdolPage</members>
-        <members>CreateIdol</members>
-        <members>prRecordSelected</members>
-        <members>idolSelected</members>
         <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
-        <members>Case</members>
-        <name>AutoResponseRules</name>
-    </types>
-    <types>
-        <members>ResponseEmail/ResponceTemplate</members>
-        <name>EmailTemplate</name>
     </types>
     <version>52.0</version>
 </Package>

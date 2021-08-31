@@ -74,6 +74,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>newAppointmentAuraController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>newAppointmentExtension</apexClass>
         <enabled>true</enabled>
     </classAccesses>
