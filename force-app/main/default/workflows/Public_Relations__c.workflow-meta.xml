@@ -9,7 +9,7 @@
             <type>user</type>
         </recipients>
         <recipients>
-            <recipient>user1@fakeemail.com</recipient>
+            <recipient>usertwo@mymail.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -20,7 +20,7 @@
         <description>PR Event email</description>
         <protected>false</protected>
         <recipients>
-            <recipient>bharatianshul97@resilient-fox-pjbvgo.com</recipient>
+            <recipient>alejandro.yanez@resourceful-koala-kdf64d.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
