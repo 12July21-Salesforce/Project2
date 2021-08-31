@@ -32,13 +32,13 @@
         <members>Public_Relations__c</members>
         <name>Workflow</name>
     </types>
-    <!--types>
+    <types>
         <members>Executive</members>
         <members>VP</members>
         <members>Admin</members>
         <members>Custom Community</members>
         <name>Profile</name>
-    </types-->
+    </types>
     <types>
         <members>*</members>
         <name>PermissionSet</name>
@@ -69,6 +69,8 @@
         <members>strayMockData</members>
         <members>bandId_Test</members>
         <members>bandId</members>
+        <members>MyIdolController</members>
+        <members>MyIdolControllerTest</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -159,6 +161,11 @@
         <members>prRecordForm</members>
         <members>LocationListController</members>
         <members>LocationApp</members>
+        <members>Idol</members>
+        <members>IdolPage</members>
+        <members>CreateIdol</members>
+        <members>prRecordSelected</members>
+        <members>idolSelected</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>

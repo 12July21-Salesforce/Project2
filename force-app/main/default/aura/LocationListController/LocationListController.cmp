@@ -1,5 +1,4 @@
-<aura:component  controller="LookupLocationAura" implements="flexipage:availableForRecordHome,force:hasRecordId,force:appHostable,forceCommunity:availableForAllPageTypes
-" access="global" >
+<aura:component  controller="LookupLocationAura" implements="flexipage:availableForRecordHome,force:hasRecordId,force:appHostable,forceCommunity:availableForAllPageTypes" access="global" >
      
     <aura:attribute type="Object" name="locationList"/>
     <aura:attribute name="Columns" type="List" />
