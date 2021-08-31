@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:appHostable"
+controller = "newAppointmentAuraController">
+    <lightning:card class="slds-p-around_medium">
+        <lightning:recordEditForm aura:id="editforms" onsuccess = "{!c.handleOnSuccess}" objectApiName="Appointment__c">
+            <lightning:inputField fieldName="Name"></lightning:inputField>
+            <lightning:button type="reset" label="Reset"></lightning:button>
+        </lightning:recordEditForm>
+        <lightning:recordEditForm aura:id="editforms" objectApiName="Logistic__c">
+            <lightning:inputField fieldName="Name"></lightning:inputField>
+        	<lightning:navigation aura:id="navService"/>
+            <lightning:button type="reset" label="Reset"></lightning:button>
+        </lightning:recordEditForm>
+        <lightning:button type="submit" label="Save" onclick="{!c.handleSubmit}"></lightning:button>
+        <lightning:button onclick="{!c.cancelRecord}" >Cancel</lightning:button>
+    </lightning:card>
+</aura:component>
