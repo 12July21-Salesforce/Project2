@@ -8,7 +8,7 @@
     <aura:if isTrue="{!v.displayForm}">
         <lightning:card class="slds-p-around_small">
             <lightning:recordForm objectApiName="Public_Relations__c" recordId="{!v.recordId}"
-                                  layoutType="Compact">
+                                  layoutType="Full">
             </lightning:recordForm>
         </lightning:card>
     </aura:if>

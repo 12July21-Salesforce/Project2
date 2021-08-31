@@ -75,7 +75,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>newAppointmentAuraController</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>newAppointmentAuraTest</apexClass>
