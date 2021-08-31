@@ -222,11 +222,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Public_Relations__c.Idol__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Public_Relations__c.Managing_Location__c</field>
         <readable>false</readable>
     </fieldPermissions>

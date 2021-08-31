@@ -29,11 +29,11 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>jal@mail.com</name>
+                <name>usertwo@mymail.com</name>
                 <type>user</type>
             </approver>
             <approver>
-                <name>markus.metli@playful-badger-ggemho.com</name>
+                <name>alejandro.yanez@resourceful-koala-kdf64d.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -71,11 +71,11 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>jal@mail.com</name>
+                <name>usertwo@mymail.com</name>
                 <type>user</type>
             </approver>
             <approver>
-                <name>markus.metli@playful-badger-ggemho.com</name>
+                <name>alejandro.yanez@resourceful-koala-kdf64d.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -90,11 +90,11 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>lb@mail.com</name>
+                <name>userone@mymail.com</name>
                 <type>user</type>
             </approver>
             <approver>
-                <name>markus.metli@playful-badger-ggemho.com</name>
+                <name>alejandro.yanez@resourceful-koala-kdf64d.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>

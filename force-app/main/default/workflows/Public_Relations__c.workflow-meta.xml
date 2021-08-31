@@ -20,7 +20,7 @@
         <description>PR Event email</description>
         <protected>false</protected>
         <recipients>
-            <recipient>markus.metli@playful-badger-ggemho.com</recipient>
+            <recipient>alejandro.yanez@resourceful-koala-kdf64d.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
