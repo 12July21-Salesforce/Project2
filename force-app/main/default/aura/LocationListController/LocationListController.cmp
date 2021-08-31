@@ -17,17 +17,10 @@
 
     <aura:attribute name="recordId" type="List"   />
 
-    <aura:registerEvent name="saveLocation" type="c:LocationComponentEvent" />
-
     <aura:handler name="init" value="{!this}" action="{!c.helperMethod}" />
     <aura:handler event="force:refreshView" action="{!c.helperMethod}"  />
     <aura:handler event="aura:doneWaiting" action="{!c.handleHideSpinner}"/>
-    
-
-     
-
-    <aura:handler event="c:LocationComponentEvent" action="{!c.detailnavigate}"/>
-   
+       
    
     <lightning:card   title="Locations"> 
             <lightning:datatable aura:id="dtTable"  
