@@ -1,14 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
-    <autoResponseRule>
-        <fullName>AutoResponseEmail</fullName>
-        <active>true</active>
-        <ruleEntry>
-            <formula>true</formula>
-            <notifyCcRecipients>false</notifyCcRecipients>
-            <senderEmail>alejandro.yanez@revature.net</senderEmail>
-            <senderName>SJP Entertainment</senderName>
-            <template>ResponseEmail/ResponceTemplate</template>
-        </ruleEntry>
-    </autoResponseRule>
-</AutoResponseRules>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata"/>
+

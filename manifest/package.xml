@@ -44,25 +44,8 @@
         <name>PermissionSet</name>
     </types>
     <types>
-        <members>blackpinkController</members>
-        <members>blackpinkControllerTest</members>
-        <members>blackpinkMockData</members>
-        <members>btsController</members>
-        <members>btsControllerTest</members>
-        <members>btsMockData</members>
-        <members>IdolControllerExtension</members>
-        <members>IdolControllerExtensionTest</members>
-        <members>LookupLocation_CC_Test</members>
-        <members>LookupLocation_CC</members>
-        <members>newAppointmentExtension</members>
-        <members>pickIdols_CC</members>
-        <members>pickIdolsTest</members>
-        <members>pITestDataFactory</members>
-        <members>strayController</members>
-        <members>strayControllerTest</members>
-        <members>strayMockData</members>
-        <members>bandId_Test</members>
-        <members>bandId</members>
+        <members>LookupLocationAura</members>
+         <members>LookupLocationAura_Test</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -139,14 +122,9 @@
         <members>*</members>
         <name>ContentAsset</name>
     </types>
-    <types>
-        <members>carousel</members>
-        <members>layout</members>
-        <members>members</members>
-        <members>popularSongs</members>
-        <members>quotes</members>
-        <members>socialmedia</members>
-        <members>tabSet</members>
+     <types>
+         
+        <members>LocationListController</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
@@ -154,7 +132,7 @@
         <name>AutoResponseRules</name>
     </types>
     <types>
-        <members>ResponseEmail/ResponceTemplate</members>
+         
         <name>EmailTemplate</name>
     </types>
     <version>52.0</version>
