@@ -1,0 +1,23 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="bandName" type="String"></aura:attribute>
+    <aura:attribute name="url1" type="String"></aura:attribute>
+    <aura:attribute name="url2" type="String"></aura:attribute>
+    <aura:attribute name="url3" type="String"></aura:attribute>
+    <aura:attribute name="url4" type="String"></aura:attribute>
+    <aura:attribute name="url5" type="String"></aura:attribute>
+    <aura:attribute name="song1" type="String"></aura:attribute>
+    <aura:attribute name="song2" type="String"></aura:attribute>
+    <aura:attribute name="song3" type="String"></aura:attribute>
+    <aura:attribute name="song4" type="String"></aura:attribute>
+    <aura:attribute name="song5" type="String"></aura:attribute>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+    
+    <ul>
+        <li><a href="{!v.url1}"><ui:outputText value="{!v.song1}"/></a></li>
+        <li><a href="{!v.url2}"><ui:outputText value="{!v.song2}"/></a></li>
+        <li><a href="{!v.url3}"><ui:outputText value="{!v.song3}"/></a></li>
+        <li><a href="{!v.url4}"><ui:outputText value="{!v.song4}"/></a></li>
+        <li><a href="{!v.url5}"><ui:outputText value="{!v.song5}"/></a></li>
+    </ul>
+</aura:component>

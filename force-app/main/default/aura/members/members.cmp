@@ -1,0 +1,27 @@
+<aura:component controller="bandId" implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="bandName" type="String"></aura:attribute>
+    <aura:attribute name="Id" type="String"></aura:attribute>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+    
+    
+    <lightning:card class="slds-p-around_small">
+        <lightning:recordViewForm objectApiName="Idol_Group__c" recordId="{!v.Id}">
+            <div class="slds-grid slds-gutters_medium">
+                <div class="slds-col slds-size_2-of-3">
+                    <lightning:outputField fieldName="Lead__c"></lightning:outputField>
+                    <lightning:outputField fieldName="Vocals__c"></lightning:outputField>
+                    <lightning:outputField fieldName="Dancer__c"></lightning:outputField>
+                    <lightning:outputField fieldName="Rapper__c"></lightning:outputField>
+                    <lightning:outputField fieldName="Multi_Role__c"></lightning:outputField>
+                    <lightning:outputField fieldName="Multi_Role2__c"></lightning:outputField>
+                </div>
+            </div>
+        </lightning:recordViewForm>
+        <!--lightning:recordForm
+        recordId="{!v.Id}"
+        objectApiName="Idol_Group__c"
+        layoutType="compact "
+        mode="readonly" /-->
+    </lightning:card>
+</aura:component>
