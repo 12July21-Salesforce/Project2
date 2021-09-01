@@ -44,12 +44,6 @@
         <name>PermissionSet</name>
     </types>
     <types>
-        <members>LookupLocationAura</members>
-        <members>LookupLocationAura__Test</members>
-        <members>prTableController</members>
-        <members>prTableControllerTest</members>
-        <members>idolListController</members>
-        <members>idolListControllerTest</members>
         <members>blackpinkController</members>
         <members>blackpinkControllerTest</members>
         <members>blackpinkMockData</members>
@@ -69,8 +63,15 @@
         <members>strayMockData</members>
         <members>bandId_Test</members>
         <members>bandId</members>
+        <members>idolListController</members>
+        <members>LookupLocationAura_Test</members>
+        <members>LookupLocationAura</members>
         <members>MyIdolController</members>
         <members>MyIdolControllerTest</members>
+        <members>newAppointmentAuraController</members>
+        <members>newAppointmentAuraTest</members>
+        <members>prTableController</members>
+        <members>prTableControllerTest</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -124,8 +125,57 @@
         <name>ApexPage</name>
     </types>
     <types>
+        <members>K-Pop</members>
+        <name>Network</name>
+    </types>
+    <types>
+        <members>K_Pop</members>
+        <name>CustomSite</name>
+    </types>
+    <types>
         <members>*</members>
+        <name>SiteDotCom</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Document</name>
+    </types> 
+    <types>
+        <members>*</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ContentAsset</name>
+    </types>
+    <types>
+        <members>carousel</members>
+        <members>layout</members>
+        <members>members</members>
+        <members>popularSongs</members>
+        <members>quotes</members>
+        <members>socialmedia</members>
+        <members>tabSet</members>
+        <members>CreateIdol</members>
+        <members>Idol</members>
+        <members>idolList</members>
+        <members>IdolPage</members>
+        <members>LocationListController</members>
+        <members>newAppointAuraComponenet</members>
+        <members>prRecordForm</members>
+        <members>prRecordSelected</members>
+        <members>prTable</members>
+        <members>PublicRelations</members>
+        <members>idolSelected</members>
         <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <name>AutoResponseRules</name>
+    </types>
+    <types>
+        <members>ResponseEmail/ResponceTemplate</members>
+        <name>EmailTemplate</name>
     </types>
     <version>52.0</version>
 </Package>

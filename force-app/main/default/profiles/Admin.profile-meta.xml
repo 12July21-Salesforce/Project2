@@ -18,6 +18,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>LookupLocationAura_Test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>LookupLocation_CC</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -70,11 +74,11 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>idolListControllerTest</apexClass>
+        <apexClass>newAppointmentAuraController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>newAppointmentAuraController</apexClass>
+        <apexClass>newAppointmentAuraTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>

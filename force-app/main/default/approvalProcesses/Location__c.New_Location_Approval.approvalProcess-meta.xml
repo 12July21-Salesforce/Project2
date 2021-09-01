@@ -29,11 +29,11 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>bharatianshul97@resilient-fox-pjbvgo.com</name>
+                <name>alejandro.yanez@resourceful-koala-kdf64d.com</name>
                 <type>user</type>
             </approver>
             <approver>
-                <name>user1@fakeemail.com</name>
+                <name>userone@mymail.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
