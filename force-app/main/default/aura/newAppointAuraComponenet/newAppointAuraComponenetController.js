@@ -3,7 +3,19 @@
         helper.saveData(component, event, helper);
     },*/
     cancelRecord : function(component, event, helper) {
-        helper.cancelHelper(component, event, helper);
+        //helper.cancelHelper(component, event, helper);
+        var cancelService = component.find("cancelService");
+        var pageReference = {
+            type: 'standard__objectPage',
+            attributes: {
+                "objectApiName": "Appointment__c",
+                "actionName": "list"
+            }/*,
+            state: {
+                "filterName": "All appointments"
+            }*/
+        }
+        cancelService.navigate(pageReference);
     },
     
     handleOnSuccess : function(component, event, helper) {

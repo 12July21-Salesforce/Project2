@@ -1,7 +1,10 @@
 @isTest
-public with sharing class newAppointmentAuraTest {
-    @isTest static void testViewLookup() {
-        ListView l = [SELECT Id, Name FROM ListView WHERE SobjectType = 'Appointment__c' AND Name = 'All' ];
-        //System.assert(newAppointmentAuraController.getListViews().Id,);
+public class newAppointmentAuraTest {
+    @isTest 
+    static void testViewLookup() {
+        //List<ListView> l2 = newAppointmentAuraController.getListViews();
+        //newAppointmentAuraController a = new newAppointmentAuraController();
+        List<ListView> views = newAppointmentAuraController.getListViews();
+        System.assert(views.size() == 1);
     }
 }

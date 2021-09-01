@@ -9,8 +9,11 @@ public with sharing class newAppointmentAuraController {
         }
     }*/
 
+    @TestVisible
     @AuraEnabled
     public static List<ListView> getListViews() {
+        // Unfortunately this method isn't being used in javascript because it was not working properly
+        // Returns list view that displays all appointments
         List<ListView> listviews = 
         [SELECT Id, Name FROM ListView WHERE SobjectType = 'Appointment__c' AND Name = 'All'];
         /*for(ListView l: listviews) {

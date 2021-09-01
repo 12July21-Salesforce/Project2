@@ -18,13 +18,25 @@
         action.setCallback(this, function(response) {
             if(response.getState() == "SUCCESS") {
                 var listviews = response.getReturnValue();
-                var navEvent = $A.get("e.force:navigateToList");
+                var cancelService = component.find("cancelService");
+                /*var navEvent = $A.get("e.force:navigateToList");
                 navEvent.setParams({
                     "listViewId": listviews.Id,
-                    "listViewName": null,
+                    "listViewName": 'All',
                     "scope": "Appointment__c"
                 });
-                navEvent.fire();
+                navEvent.fire();*/
+                var pageReference = {
+                    type: 'standard__objectPage',
+                    attributes: {
+                        "objectApiName": "Appointment__c",
+                        "actionName": "view"
+                    },
+                    state: {
+                        filterName: 'All'
+                    }
+                }
+                cancelService.navigate(pageReference);
             }
         });
     }

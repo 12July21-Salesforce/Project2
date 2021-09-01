@@ -1,16 +1,19 @@
 <aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:appHostable"
 controller = "newAppointmentAuraController">
     <lightning:card class="slds-p-around_medium">
+        <!-- 2 different types of records being created, so 2 recordEditForms -->
         <lightning:recordEditForm aura:id="editforms" onsuccess = "{!c.handleOnSuccess}" objectApiName="Appointment__c">
             <lightning:inputField fieldName="Name"></lightning:inputField>
             <lightning:button type="reset" label="Reset"></lightning:button>
         </lightning:recordEditForm>
         <lightning:recordEditForm aura:id="editforms" objectApiName="Logistic__c">
             <lightning:inputField fieldName="Name"></lightning:inputField>
-        	<lightning:navigation aura:id="navService"/>
             <lightning:button type="reset" label="Reset"></lightning:button>
         </lightning:recordEditForm>
+        <!-- Save button saves both records at once. -->
         <lightning:button type="submit" label="Save" onclick="{!c.handleSubmit}"></lightning:button>
-        <lightning:button onclick="{!c.cancelRecord}" >Cancel</lightning:button>
+        <!-- Redirects to Appointment Records List Page -->
+        <lightning:button onclick="{!c.cancelRecord}" >Show Appointments</lightning:button>
+        <lightning:navigation aura:id="cancelService"/>
     </lightning:card>
 </aura:component>
