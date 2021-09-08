@@ -32,7 +32,9 @@ To-do list:
 
 ## Usage
 
-> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+https://sjpentertainmencloud-developer-edition.na163.force.com/kpop
+
+Go to the link, create a new user and log in to navigate in the site
 
 ## Contributors
 
