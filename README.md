@@ -39,7 +39,7 @@ Go to the link, create a new user and log in to navigate in the site
 ## Contributors
 
 > Alejandro Yanez
-> Anshul Kumar
+> Anshul Bharati
 > Markus Melti
 > Jay Nyawera
 > Christian Aviles
